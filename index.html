@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="alarm-app">
+      <div class="alarm-container">
+        <img
+          src="https://imgcdn.stablediffusionweb.com/2024/5/10/c626284a-0bdb-48f5-8c93-aa0e2660f788.jpg"
+          style="height: 40vh"
+          alt=""
+        />
+        <h1 id="current-time" class="time-display"></h1>
+        <div class="alarm-settings">
+          <label for="hours">Hours</label>
+          <select name="hours" id="hours"></select>
+
+          <label for="minutes">Minutes</label>
+          <select name="minutes" id="minutes"></select>
+
+          <label for="seconds">Seconds</label>
+          <select name="seconds" id="seconds"></select>
+
+          <label for="ampm">AM/PM</label>
+          <select name="ampm" id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <div class="button-container">
+          <button id="set-alarm" class="alarm-btn">Set Alarm</button>
+          <button id="clear-alarm" class="clear-btn">Clear Alarm</button>
+        </div>
+        <div id="alarm-status" class="alarm-status"></div>
+
+        <audio
+          src="mixkit-classic-winner-alarm-1997.mp3"
+          id="alarm-sound"
+          preload="auto"
+        ></audio>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
